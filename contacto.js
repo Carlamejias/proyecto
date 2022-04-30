@@ -20,7 +20,7 @@ form.addEventListener("submit", e=>{
         warnings += "El correo no tiene un formato valido <br>"
         entrar = true
     }
-    if((tel.value.length >9 <9)){
+    if((tel.value.length <12 >9)){
         warnings += "El numero telefonico no tiene un formato valido <br>"
         entrar = true
     }
@@ -28,8 +28,8 @@ form.addEventListener("submit", e=>{
         warnings += "La ciudad no tiene un formato valido <br>"
         entrar = true
     }
-    if((coment.value.length <30 >50)){
-        warnings += "El comentario es muy corto<br>"
+    if((coment.value.length <50 >30)){
+        warnings += "Ingrese un comentario de minimo 30 caracteres <br>"
         entrar = true
     }
     if(entrar){
