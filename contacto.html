@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Gatos</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="peludos.css" />
+  </head>
+  <body>
+    <a href ="peludos.html"> Inicio </a>
+        <h1 align="center">ADOPCION</h1>
+      <p1 > Si quieres ayudar a los perros callejeros, ADOPTA!!!</p1>
+      <div>
+          <form action="" method="POST" id="form">
+              <label for="nombre">Nombre Completo:</label>
+              <input type="text" name="nombre" id="Nombre">
+              <br>
+              <label for="correo">Correo electronico:</label>
+              <input type="text" name="correo" id="correo">
+              <br>
+              <label for="tipo">Seleccione:</label>
+              <select name="tipo">
+                <option value="1">Rut</option>
+                <option value="2">Pasaporte</option>
+              </select>
+              <br>
+              <label for="id">Ingrese su RUN/ID:</label>
+              <input type="text" name="id" id="id" required oninput="checkRut(this)">
+              <script src="validarRUT.js"></script>
+              <br>
+              <label for="tel">Nro. Telefonico:</label>
+              <input type="text" name="tel" id="tel">
+              <br>
+              <label for="ciudad">Ciudad:</label>
+              <input type="text" name="ciudad" id="ciudad">
+              <br>
+              <label for="coment">¿Porque desea adoptar?</label>
+              <br>
+              <textarea name="coment" id="coment" cols="30" rows="6"></textarea>
+              <br>
+              <button type="reset" class="btn btn-primary">Limpiar</button>
+              <button type="submit" class="btn btn-primary">Enviar</button>
+              <p class="warnings" id="warnings"></p>  
+          </form>
+      </div>
+    <script src="contacto.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
